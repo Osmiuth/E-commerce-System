@@ -24,114 +24,91 @@ function Home(){
     }, []);
 
     return(
-        <><Layout></Layout><body className="container-fluid px-0 mb-5  mx-0">
-            <div className="container-fluid hero mb-5 py-5 px-4 d-flex flex-column text-center gap-4 justify-content-center align-items-center">
-                <div className="content">
-                    <h2 className="fw-bold hero-title text-white my-1 m-4 hero-content">Innovative Plastics and Packaging Solutions for Every Need</h2>
-                    <p className=" ls-1 hero-text text-white mt-5 hero-content">At Oro Hi-Q Industries, Inc., we produce top of the line products at all times, provide competitive rate option to its clients, and maintain a quality of service not only in Mindanao, but on the three biggest islands of the Philippines.</p>
-                    <div className="d-flex justify-content-evenly hero-content">
-                        <Link to="/services" class="btn hero-btn text-white px-5 btn-blue ">Learn More</Link>
-                        <Link to="" class="btn hero-btn bg-transparent px-4 btn-blue-outline text-white">Contact Us</Link>
-                    </div>
-                </div>
+        <>
+        <Layout />
+        <main>
+          {/* Hero Section */}
+          <section className="hero d-flex align-items-center justify-content-center flex-column text-center position-relative">
+            <div className="hero-content py-5 px-4">
+              <h1 className="hero-title mb-3">Your Trusted Partner for Packaging & Water Solutions</h1>
+              <p className="hero-text mb-4">Discover a wide range of high-quality packaging products and water treatment solutions designed to help your business grow. Fast shipping, competitive pricing, and expert support—serving the Philippines and beyond.</p>
+              <div className="d-flex flex-wrap justify-content-center gap-3">
+                <Link to="/services" className="btn btn-blue px-5">Our Services</Link>
+                <Link to="" className="btn btn-blue-outline px-4">Contact Sales</Link>
+              </div>
             </div>
+          </section>
 
-            <div className="container left-right d-flex my-5 px-5 pt-5 flex-column justify-content-between">
-                <h1 className="fw-bold text-center text-blue mb-4">Your <span className="text-yellow">all in one</span>  water treatment needs</h1>
-
-                <p className="py-3 mt-2 text-center ls-1 my-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim odio adipisci repellendus voluptas ratione corrupti eos corporis? Ut veniam numquam autem, iure minima earum voluptatum rem distinctio asperiores minus nostrum ex ipsam labore nobis at nesciunt placeat unde non. Deserunt.</p>
+          {/* Features Section */}
+          <section className="features-section py-5 bg-white">
+            <div className="container">
+              <div className="row justify-content-center mb-4">
+                <div className="col-12 text-center">
+                  <h2 className="section-title mb-3">Why Shop with <span className="text-yellow">Oro Hi-Q</span>?</h2>
+                  <p className="mb-0">Your one-stop shop for packaging, water treatment, and business essentials</p>
+                </div>
+              </div>
+              <div className="row g-4 mt-2">
+                <div className="col-md-4">
+                  <div className="feature-card p-4 h-100 text-center shadow-sm rounded-4 bg-light">
+                    <div className="mb-3" style={{fontSize:'2.5em'}}>🚚</div>
+                    <h5 className="fw-bold mb-2">Fast Nationwide Delivery</h5>
+                    <p>Get your orders quickly and reliably, wherever you are in the Philippines. We ship fast so you can keep your business moving.</p>
+                  </div>
+                </div>
+                <div className="col-md-4">
+                  <div className="feature-card p-4 h-100 text-center shadow-sm rounded-4 bg-light">
+                    <div className="mb-3" style={{fontSize:'2.5em'}}>💳</div>
+                    <h5 className="fw-bold mb-2">Secure Online Payments</h5>
+                    <p>Shop with confidence using our secure checkout. Multiple payment options for your convenience.</p>
+                  </div>
+                </div>
+                <div className="col-md-4">
+                  <div className="feature-card p-4 h-100 text-center shadow-sm rounded-4 bg-light">
+                    <div className="mb-3" style={{fontSize:'2.5em'}}>📦</div>
+                    <h5 className="fw-bold mb-2">Bulk & Retail Orders</h5>
+                    <p>Whether you need a single item or a full truckload, we cater to both small businesses and large enterprises.</p>
+                  </div>
+                </div>
+              </div>
             </div>
+          </section>
 
-            <div className="ad mt-5 gap-5">
-                <div className="left px-4">
-                    <div className="d-flex flex-column m-0">
-                        <div className="d-flex gap-4">
-                            <div className="icon-area container bg-dangr relative pb-24 lg:pb-20">
-                                <span className="absolute line-span top-24 left-10 bottom-4 -ml-px border border-dashed border-gray-300"></span>
-
-                                <div className="icon-area container text-center bg-info rounded-circle">
-                                    <span>svg</span>
-                                </div>
-                            </div>
-                            <div className="text-area col-9">
-                                <h3>Top of the line products</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius molestiae vero porro sequi dolor? Debitis.</p>
-                            </div>
-                        </div>
-                        <div className="d-flex gap-4">
-                            <div className="icon-area container relative pb-24 lg:pb-20">
-                                <span className="absolute line-span top-24 left-10 bottom-4 -ml-px border border-dashed border-gray-300"></span>
-
-                                <div className="icon-area container text-center bg-info rounded-circle">
-                                    <span>svg</span>
-                                </div>
-                            </div>
-                            <div className="text-area col-9">
-                                <h3>Top of the line products</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius molestiae vero porro sequi dolor? Debitis.</p>
-                            </div>
-                        </div>
-                        <div className="d-flex gap-4">
-                            <div className="icon-area container bg-dangr relative pb-24 lg:pb-20">
-                                <span className="absolute line-span top-24 left-10 bottom-4 -ml-px border border-dashed border-gray-300"></span>
-
-                                <div className="icon-area container text-center bg-info rounded-circle">
-                                    <span>svg</span>
-                                </div>
-                            </div>
-                            <div className="text-area col-9">
-                                <h3>Top of the line products</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius molestiae vero porro sequi dolor? Debitis.</p>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-
-                <div className="right px-2 mx-md-5">
-                    <div className="card mx-3" style={{ border: 'none' }}>
-                        <div className="card-image">
-                            <img src={water} className="w-100 img-fluid bg-transparent card-img" style={{ borderRadius: "1em" }} alt="" />
-                        </div>
-
-                        <div className="card-badge text-center px-5  py-2 mx-auto text-white fw-medium" style={{ backgroundColor: '#317FAD', borderRadius: '1em' }}>
-                            10+ <br />
-                            Years of Experience
-                        </div>
-                    </div>
-                </div>
+          {/* Experience Section */}
+          <section className="experience-section py-5 bg-blue-gradient text-white">
+            <div className="container d-flex flex-column flex-lg-row align-items-center gap-5">
+              <div className="flex-shrink-0 mb-4 mb-lg-0">
+                <img src={water} alt="Water treatment" className="img-fluid shadow-lg" style={{borderRadius: '1.5em', maxWidth: '350px'}} />
+              </div>
+              <div>
+                <h2 className="fw-bold mb-3">Over a Decade of Industry Expertise</h2>
+                <p className="fs-5 mb-0">Join thousands of satisfied customers who trust Oro Hi-Q for their packaging and water treatment needs. Our team brings years of experience and a commitment to quality service—every order, every time.</p>
+              </div>
             </div>
+          </section>
 
-
-
-            <div className="container py-5 my-3 mt-5">
-                <h1 className="text-center text-blue fw-bold fs-1">Products</h1>
-                <p className="text-center mb-5">Explore our wide range of high-quality plastic products and packaging solutions.</p>
-
-
-                <div className="container-fluid row gap-3 ms-2">
-                    <div className="center-card">
-                        <div class="row row-cols-md-2 row-cols-lg-3 row-cols-xl-4 row-cols-xxl-5 g-2">
-                            {products.slice(0, 10).map((product) => (
-
-                                <div className="col center-card">
-                                    <ProductItem product={product} isAdmin={false}></ProductItem>
-                                </div>
-
-                            ))}
-                        </div>
+          {/* Products Section */}
+          <section className="products-section py-5">
+            <div className="container">
+              <h2 className="section-title text-center mb-3">Featured Products</h2>
+              <p className="text-center mb-5">Browse our best-selling packaging supplies, water filters, and more. Quality guaranteed for every business size.</p>
+              <div className="row g-4 justify-content-center">
+                {products.slice(0, 8).map((product) => (
+                  <div className="col-12 col-sm-6 col-md-4 col-lg-3 d-flex" key={product.id}>
+                    <div className="product-card flex-fill p-3 bg-white shadow-sm rounded-4 h-100 d-flex flex-column align-items-center justify-content-between">
+                      <ProductItem product={product} isAdmin={false} />
                     </div>
-                </div>
-
-                <div className="d-flex justify-content-center">
-                    <Link className="btn align-center my-5 btn-blue px-4" to='/products'>View All</Link>
-                </div>
+                  </div>
+                ))}
+              </div>
+              <div className="d-flex justify-content-center mt-4">
+                <Link className="btn btn-blue px-4" to='/products'>Shop All Products</Link>
+              </div>
             </div>
-
-            <Footer></Footer>
-
-        </body></>
+          </section>
+        </main>
+        <Footer />
+        </>
     )
 }
 

@@ -13,28 +13,27 @@ function Footer(){
       };
     return(
         <>
-            <footer className="bg-blue-gradient text-white">
+            <footer className="footer">
                 <div className="container-fluid py-5">
-                    <div className="container row gap-4 mx-auto">
-                        <div className="container row col-lg-6 text-center">
-                            <h1 className="text-lg-start fw-bold my-4 mx-3 col-lg-10 text-yellow mb-5" style={{letterSpacing:'2px', lineHeight: '1.5em'}}>Lets make something great together</h1>
+                    <div className="container row gap-4 mx-auto align-items-center">
+                        <div className="col-lg-6 text-center text-lg-start mb-4 mb-lg-0">
+                            <h1 className="fw-bold text-yellow mb-3" style={{letterSpacing:'2px', lineHeight: '1.5em'}}>Let’s make something great together</h1>
+                            <p className="lh-base text-white-50" style={{maxWidth: '32ch'}}>Contact us for innovative packaging and water treatment solutions tailored to your needs.</p>
                         </div>
-                        
-                       
-                        <div className="container col-lg-6">
-                            <h6 className="fw-medium text-center lh-base mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi tenetur sunt praesentium dolores nam enim, magnam est atque quia dolor.</h6>
-
-                            <div className="container w-80 mt-2 d-flex flex-column gap-4 align-items-start mb-5">
-                                <Link to="" class="btn w-100 text-white bg-transparent px-5 btn-yellow-outline" >Facebook</Link>
-
-                                <Link to="" class="btn w-100 text-white bg-transparent px-5 btn-yellow-outline" >Shopee</Link>
+                        <div className="col-lg-6 d-flex flex-column align-items-center align-items-lg-end">
+                            <div className="d-flex gap-3 mb-4">
+                                <a href="#" className="btn btn-yellow-outline d-flex align-items-center gap-2" style={{minWidth: '120px'}}>
+                                    <span style={{fontSize: '1.2em'}}>📘</span> Facebook
+                                </a>
+                                <a href="#" className="btn btn-yellow-outline d-flex align-items-center gap-2" style={{minWidth: '120px'}}>
+                                    <span style={{fontSize: '1.2em'}}>🛒</span> Shopee
+                                </a>
                             </div>
+                            <button className="btn btn-blue" onClick={handleChatClick} style={{minWidth: '180px'}}>Chat Now 💬</button>
                         </div>
-                        
                     </div>
-
-                    <div className="copyright" style={{borderTop:"1px solid white"}}>
-                        <p className="text-center mt-3">@2024 Oro Hi-Q. All rights reserved.</p>
+                    <div className="copyright mt-5 pt-3" style={{borderTop:"1px solid #ffffff22"}}>
+                        <p className="text-center mb-0" style={{color:'#fff', opacity:0.8}}>&copy; 2024 Oro Hi-Q. All rights reserved.</p>
                     </div>
                 </div>
             </footer>

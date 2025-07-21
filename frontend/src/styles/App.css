@@ -159,10 +159,32 @@ img {
 .footer {
   background: #143447;
   color: #fff;
-  padding: 2em 0;
+  padding: 2.5em 0 1.5em 0;
   text-align: center;
   font-size: 1em;
-  margin-top: 3em;
+  margin-top: 0;
+  box-shadow: 0 -2px 16px rgba(20,52,71,0.08);
+  border-top: 2px solid #e3e8ee22;
+  position: relative;
+  width: 100%;
+}
+
+/* Sticky footer for short pages */
+html, body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+#root {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex: 1 0 auto;
 }
 
 .features-section {
@@ -191,7 +213,8 @@ img {
 .products-section {
   background: #f8fafc;
   padding-top: 3em;
-  padding-bottom: 3em;
+  padding-bottom: 4.5em; /* Increased for more space above footer */
+  margin-bottom: 0;
 }
 .product-card {
   border-radius: 1.5em !important;

@@ -1,24 +1,22 @@
 :root {
-  --accent: #317FAD;
-  --accent-light: #eaf4fb;
-  --gray-light: #f5f6fa;
-  --gray: #e5e7eb;
-  --gray-dark: #b0b3b8;
-  --radius: 1.5em;
-  --shadow: 0 4px 32px rgba(49,127,173,0.08);
-  --shadow-hover: 0 8px 32px rgba(49,127,173,0.13);
+  --aetherix-primary: #6C47FF;
+  --aetherix-accent: #1DE9B6;
+  --aetherix-bg: #F6F7FB;
+  --aetherix-text: #232336;
+  --aetherix-card: #fff;
+  --aetherix-radius: 1.5em;
+  --aetherix-shadow: 0 4px 32px rgba(108,71,255,0.08);
+  --aetherix-shadow-hover: 0 8px 32px rgba(108,71,255,0.13);
   --font-main: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
 }
 
 html, body {
   height: 100%;
   font-family: var(--font-main);
-  background: var(--gray-light);
-  color: #222;
+  background: var(--aetherix-bg);
+  color: var(--aetherix-text);
   margin: 0;
   padding: 0;
-  letter-spacing: 0.01em;
-  -webkit-font-smoothing: antialiased;
   min-height: 100vh;
 }
 body {
@@ -345,5 +343,161 @@ img {
   }
   .apple-hero-subtitle {
     font-size: 1em;
+  }
+}
+
+.aetherix-bg {
+  min-height: 100vh;
+  background: var(--aetherix-bg);
+  display: flex;
+  flex-direction: column;
+}
+
+.aetherix-navbar {
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 2px 16px rgba(108,71,255,0.06);
+  padding: 1.2em 0 1.2em 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.aetherix-brand {
+  font-size: 2em;
+  font-weight: 700;
+  color: var(--aetherix-primary);
+  letter-spacing: 0.02em;
+}
+
+.aetherix-hero {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  padding: 5em 1.5em 2em 1.5em;
+  text-align: center;
+}
+.aetherix-hero-title {
+  font-size: 2.8em;
+  font-weight: 800;
+  color: var(--aetherix-primary);
+  margin-bottom: 0.4em;
+  letter-spacing: -0.01em;
+}
+.aetherix-hero-subtitle {
+  font-size: 1.25em;
+  color: #4a4a5c;
+  font-weight: 400;
+  margin-bottom: 2em;
+}
+.aetherix-cta-btn {
+  background: var(--aetherix-accent);
+  color: #fff;
+  border: none;
+  border-radius: 2em;
+  padding: 0.9em 2.8em;
+  font-size: 1.15em;
+  font-weight: 700;
+  box-shadow: 0 2px 16px rgba(29,233,182,0.10);
+  transition: background 0.18s, box-shadow 0.18s, transform 0.13s;
+  cursor: pointer;
+  outline: none;
+}
+.aetherix-cta-btn:hover, .aetherix-cta-btn:focus {
+  background: #13bfa2;
+  color: #fff;
+  box-shadow: 0 6px 32px rgba(29,233,182,0.13);
+  transform: translateY(-2px) scale(1.03);
+}
+
+.aetherix-features {
+  width: 100%;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2em 0 3em 0;
+}
+.aetherix-features-inner {
+  display: flex;
+  gap: 2em;
+  max-width: 900px;
+  width: 100%;
+  justify-content: center;
+}
+.aetherix-feature-card {
+  background: var(--aetherix-card);
+  border-radius: var(--aetherix-radius);
+  box-shadow: var(--aetherix-shadow);
+  padding: 2.2em 1.5em 1.7em 1.5em;
+  flex: 1 1 0;
+  min-width: 220px;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.aetherix-feature-card:hover {
+  box-shadow: var(--aetherix-shadow-hover);
+  transform: translateY(-4px) scale(1.03);
+}
+.aetherix-feature-icon {
+  font-size: 2.3em;
+  color: var(--aetherix-accent);
+  margin-bottom: 0.7em;
+}
+.aetherix-feature-title {
+  font-size: 1.25em;
+  font-weight: 700;
+  color: var(--aetherix-primary);
+  margin-bottom: 0.3em;
+}
+.aetherix-feature-desc {
+  color: #4a4a5c;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.aetherix-footer {
+  width: 100%;
+  background: #fff;
+  color: var(--aetherix-primary);
+  text-align: center;
+  font-size: 1em;
+  padding: 2em 0 1em 0;
+  margin-top: auto;
+  border-top: 1.5px solid #ececec;
+  letter-spacing: 0.01em;
+}
+
+@media (max-width: 900px) {
+  .aetherix-features-inner {
+    flex-direction: column;
+    gap: 1.5em;
+    align-items: center;
+  }
+  .aetherix-feature-card {
+    max-width: 95vw;
+  }
+}
+@media (max-width: 600px) {
+  .aetherix-hero-title {
+    font-size: 1.7em;
+  }
+  .aetherix-hero-subtitle {
+    font-size: 1em;
+  }
+  .aetherix-navbar {
+    padding: 0.7em 0;
+  }
+  .aetherix-features {
+    padding: 1.2em 0 2em 0;
   }
 }

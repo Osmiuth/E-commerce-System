@@ -1,86 +1,45 @@
 import React from "react";
-import '../../styles/Aboutus.css';
-import Footer from "../../components/Footer";
 import Layout from "./Layout";
+import "../../styles/App.css";
 
-
-function AboutUs(){
-
-    return(
-        <>
-        <Layout></Layout>
-            <div className="container-fluid row bg-dnger my-5">
-                <div className="left col-lg-10 content ps-5 mx-auto">
-
-                        <h1 className="text-blue fw-bold">Producing top of the line products since 2003</h1>
-                        <p className="fs-3 py-4">Oro Hi-Q Packaging Corporation (OHQPC) was established in 2003 as a family-owned corporation with a clear vision to become the leading packaging supplier and water treatment supplies in the Philippines. Since its inception, OHQPC has grown steadily, expanding its product lines and establishing a loyal client base. The company's commitment to quality and affordability has earned it a reputation as a reliable partner for businesses of all sizes in the Mindanao region.</p>
-                        <p className="fs-3 py-4">Over the years, OHQPC has continued to expand its reach and its product offerings. The company's growth has been fueled by its dedication to innovation and its ability to adapt to the changing needs of its clients. Today, OHQPC is a one-stop-shop for all plastic and paper packaging needs as well as a wide range of other products and services, including water treatment and purification systems, agri-livestock supplies, and tarpaulin and sticker printing.</p>
-                        <p className="fs-3 py-4">Despite the challenges of the past years, OHQPC remains committed to its mission of providing quality products at affordable prices. With its experienced and dedicated team, state-of-the-art facilities, and a growing network of branches and depots, the company is well-positioned to continue its impressive growth trajectory. OHQPC is proud of its history and excited about the opportunities that lie ahead, as it continues to provide exceptional service to its clients and contribute to the economic development of the Philippines.</p>
-
-                </div>
-
-                <div className="right-about col-lg ms-lg-5">
-                    {/* <div className="right-image img-fluid"></div> */}
-                </div>
-            </div>
-
-            <div className="portfolio container-fluid py-5 my-5">
-                <div className="row py-5">
-                    <div className="port-left col-lg-6">
-                        <img src="../src/images/hero.jpg" alt="" className="img-fluid h-100"/>
-                    </div>
-
-                    <div className="port-right col-lg-6 text-center">
-                        <div className="content right-about py-3 mx-auto">
-                            <h1 className="title text-blue py- mt-4">Client Portfolio</h1>
-                            <p className="py-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates magnam quos quas dolor tempore sequi illo nam facilis, deleniti voluptatibus consectetur, nemo commodi labore dignissimos vel dicta cupiditate! Provident in ratione qui atque labore soluta?</p>
-                        </div>
-
-                        {/* <div class="row row-cols-1 row-cols-md-3 g-4">
-
-                            <div class="col">
-                                <h4><span class="badge text-bg-secondary px-4 py-3">Hotel</span></h4>
-                            </div>
-                            <div class="col">
-                                <h4><span class="badge text-bg-secondary px-4 py-3">Restaurant</span></h4>
-                            </div>
-                            <div class="col">
-                                <h4><span class="badge text-bg-secondary px-4 py-3">Food & Beverage SME"s</span></h4>
-                            </div>
-                            <div class="col">
-                                <h4><span class="badge text-bg-secondary px-4 py-3">Hospitals</span></h4>
-                            </div>
-                            <div class="col">
-                                <h4><span class="badge text-bg-secondary px-4 py-3">Clinics</span></h4>
-                            </div>
-                            <div class="col">
-                                <h4><span class="badge text-bg-secondary px-4 py-3">Poultry & Livestock</span></h4>
-                            </div>
-
-                        </div> */}
-                    </div>
-
-                </div>
-            </div>
-
-            <div className="continer text-center p-4">
-                <div className="mission py-4 ">
-                    <h1 className="title-mission text-blue py-2 my-2 fw-bold">Mission</h1>
-                    <p className="mv-text px-md-5 mx-md-5 fs-3">To produce top of the line products at all times, provide competitive rate option to its clients, and maintain a quality of service unequalled by any other in the country.</p>
-                </div>
-
-                <div className="vision py-4">
-                    <h1 className="title-vision text-blue py-2 my-2 fw-bold">Vision</h1>
-                    <p className="mv-text px-md-5 fs-3">The leading plastic and paper packaging manufacturer and supplier in the Visayas and Mindanao area, becoming the by word in the country's packaging industry. The name Oro Hi-Q will be known for its superior quality standards and excellent customer service. Its product lines and trademarks, such as the Golden Glow will become household names, dominating the market.</p>
-                </div>
-
-            </div>
-
-            <Footer></Footer>
-
-
-        </>
-    )
+function AboutUs() {
+  return (
+    <Layout>
+      <section className="aetherix-hero" style={{paddingTop: '3em', paddingBottom: '2em'}}>
+        <h1 className="aetherix-hero-title">About Aetherix</h1>
+        <p className="aetherix-hero-subtitle" style={{maxWidth: 600, margin: '0 auto'}}>
+          Aetherix is dedicated to empowering businesses with seamless, secure, and scalable digital solutions. Our mission is to help you achieve more, faster.
+        </p>
+      </section>
+      <section className="aetherix-features" style={{paddingTop: 0}}>
+        <div className="aetherix-features-inner">
+          <div className="aetherix-feature-card">
+            <div className="aetherix-feature-icon">🚀</div>
+            <h3 className="aetherix-feature-title">Innovation</h3>
+            <p className="aetherix-feature-desc">We constantly push boundaries to deliver cutting-edge solutions for modern businesses.</p>
+          </div>
+          <div className="aetherix-feature-card">
+            <div className="aetherix-feature-icon">🤝</div>
+            <h3 className="aetherix-feature-title">Partnership</h3>
+            <p className="aetherix-feature-desc">We believe in building lasting relationships and growing together with our clients.</p>
+          </div>
+          <div className="aetherix-feature-card">
+            <div className="aetherix-feature-icon">🌱</div>
+            <h3 className="aetherix-feature-title">Sustainability</h3>
+            <p className="aetherix-feature-desc">Our solutions are designed to scale with you, supporting sustainable growth at every stage.</p>
+          </div>
+        </div>
+      </section>
+      <section style={{background: '#fff', padding: '3em 0'}}>
+        <div style={{maxWidth: 700, margin: '0 auto', textAlign: 'center'}}>
+          <h2 className="aetherix-hero-title" style={{fontSize: '2em'}}>Our Mission</h2>
+          <p className="aetherix-hero-subtitle" style={{marginBottom: '2em'}}>To empower organizations with technology that is fast, secure, and easy to use—enabling them to reach new heights.</p>
+          <h2 className="aetherix-hero-title" style={{fontSize: '2em'}}>Our Vision</h2>
+          <p className="aetherix-hero-subtitle">To be the world’s most trusted partner for digital transformation and business growth.</p>
+        </div>
+      </section>
+    </Layout>
+  );
 }
 
 export default AboutUs;

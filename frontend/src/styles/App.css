@@ -501,3 +501,38 @@ img {
     padding: 1.2em 0 2em 0;
   }
 }
+
+.aetherix-navlinks {
+  display: flex;
+  gap: 1.5em;
+  margin-left: 2em;
+}
+.aetherix-navlink {
+  color: var(--aetherix-text);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.08em;
+  padding: 0.45em 1.3em;
+  border-radius: 2em;
+  transition: background 0.18s, color 0.18s;
+  background: none;
+  position: relative;
+}
+.aetherix-navlink.active, .aetherix-navlink:focus {
+  background: var(--aetherix-accent);
+  color: #fff;
+}
+.aetherix-navlink:hover {
+  background: var(--aetherix-primary);
+  color: #fff;
+}
+@media (max-width: 600px) {
+  .aetherix-navlinks {
+    gap: 0.5em;
+    margin-left: 0.5em;
+  }
+  .aetherix-navlink {
+    font-size: 0.98em;
+    padding: 0.35em 0.8em;
+  }
+}

@@ -1,0 +1,43 @@
+version: '3'
+
+services:
+
+  db:
+    image: mariadb:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: "root"
+      MYSQL_DATABASE: "mydatabase"
+      MYSQL_USER: "myuser"
+      MYSQL_PASSWORD: "mypassword"
+    ports:
+      - 3306:3306
+    volumes:
+      - ./database:/var/lib/mysql
+    restart: always
+
+  django:
+    build:
+      context: ./backend
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+    environment:
+      - DJANGO_DB_HOST=db
+      
+    volumes:
+      - ./backend:/code
+      - ./backend/media/images/:/code/media/images/
+    command: sh -c "python manage.py runserver 0.0.0.0:8000"
+    restart: always
+
+  react:
+    build:
+      context: ./frontend
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    command: sh -c "npm run dev"
+

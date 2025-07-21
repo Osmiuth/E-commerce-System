@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/src/assets/logo.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oro Hi-Q</title>
+
+    <script type="text/javascript">
+      var path = window.location.pathname;
+      var protectedRoutes = ['/admin', '/productadmin', '/serviceadmin', '/footeradmin'];
+      var isProtectedRoute = protectedRoutes.some(route => path.includes(route));
+
+      if (!isProtectedRoute) {
+        var _smartsupp = _smartsupp || {};
+        _smartsupp.key = '4f2c4202a1c09f302be0042a0938673779483edb';
+        window.smartsupp||(function(d) {
+          var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
+          s=d.getElementsByTagName('script')[0];c=d.createElement('script');
+          c.type='text/javascript';c.charset='utf-8';c.async=true;
+          c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
+        })(document);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

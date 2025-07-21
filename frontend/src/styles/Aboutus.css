@@ -1,0 +1,18 @@
+
+.right-about{
+    background-image: url("../images/hero.jpg");
+    background-size:cover;
+    height: auto;
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center center;
+    background-position: -80rem -100px;
+    position: relative;
+  }
+.left{
+    text-align: justify;
+}
+.portfolio{
+    background: #D6E5EE;
+}

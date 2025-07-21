@@ -1,0 +1,16 @@
+.custom-offcanvas {
+    width: 40% !important ; /* adjust this value to your liking */
+  }
+
+.wide-btn{
+    width: 6em;
+}
+
+.btn-footer{
+    padding-left: 60%;
+    background-color: white;
+    bottom: 16px;
+    display: flex;
+    justify-content: right;
+    justify-content: bottom;
+}

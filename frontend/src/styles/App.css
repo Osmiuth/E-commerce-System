@@ -1,0 +1,216 @@
+.hero{
+  background-image: url("../images/hero.jpg");
+  background-size:cover;
+  height: 100vh;
+  width: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: center center;
+  background-position: -500px 0px;
+  position: relative;
+}
+
+
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5); /* Adjust the opacity to control darkness */
+  z-index: 1;
+}
+
+/* Make sure your content is positioned above the overlay */
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+
+.btn-yellow-outline{
+  border: 1px solid #cccccc !important;
+  border-radius: 20px !important;
+
+}
+.btn-yellow-outline:hover{
+  background-color: #F5AD24  !important;
+  border: 1px solid #F5AD24  !important;
+  border-radius: 20px !important;
+}
+.btn-blue{
+  /* border: 1px solid #0540F2 !important;
+  background-color: #0540F2 !important; */
+  border: 1px solid #317FAD !important;
+  background-color: #317FAD !important;
+  border-radius: 20px !important;
+  color: white !important;
+}
+
+.btn-blue-outline{
+  border: 1px solid #317FAD !important;
+  background-color: red !important;
+  border-radius: 20px !important;
+  color: #317FAD !important;
+}
+.btn-blue-outline:hover{
+  background-color: #317FAD  !important;
+  border: 1px solid #317FAD  !important;
+  border-radius: 20px !important;
+  color: #ffffff !important;
+}
+
+.bg-blue-gradient{
+  background: linear-gradient(to bottom, #317FAD, #143447);
+}
+
+.text-blue{
+  color: #317FAD;
+}
+.text-yellow{
+  color: #F5AD24;
+}
+
+
+
+/*  for the dotted lines practice */
+.absolute {
+  position: absolute !important;
+}
+.top-24 {
+  top: 5rem !important;
+  bottom: 11rem !important;
+}
+.left-10 {
+  left: 2.5rem !important;
+}
+.bottom-4 {
+  bottom: 1rem !important;
+}
+
+.-ml-px {
+  margin-left: 3px !important;
+}
+
+.border {
+  border-width: 1px !important;
+}
+.border-dashed {
+  border-style:dotted !important;
+}
+.border-gray-300 {
+  --tw-border-opacity: 1 !important;
+  border-color: rgb(209 213 219 / var(--tw-border-opacity)) !important;
+}
+
+.relative {
+  position: relative !important;
+}
+.pb-24 {
+  padding-bottom: 12rem;
+}
+
+.icon-area{
+  width: 70px !important;
+  height: 70px !important;
+  border-radius: 50% !important;
+}
+
+.ad {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.right{
+  width: 100%;
+}
+
+.right-service{
+  margin-top: 5em !important;
+}
+
+.card-custom{
+  background-color: #F4F5FC !important;
+  border: none !important;
+}
+.card-left{
+  border-radius: 6rem 1.5rem 1.5rem 1.5rem !important;
+
+}
+.card-right{
+  border-radius: 1.5rem 1.5rem 6rem 1.5rem !important;
+}
+
+
+img{
+  border-radius: 0.75rem;
+
+}
+.nav-link {
+  text-decoration: none;
+}
+
+
+.content{
+  max-width: 57ch !important;
+}
+
+
+.nav-about:hover{
+  color: red !important;
+
+}
+
+.nav-prod:hover{
+  color: #317FAD !important;
+
+}
+.nav-services:hover{
+  color: #F5AD24 !important;
+
+}
+
+
+
+
+
+@media only screen and (min-width: 900px){
+  .content{
+    max-width: 60%;
+  }
+  .hero-title{
+    font-size: 3em;
+  }
+  .hero-text{
+    font-size: 1.5em;
+  }
+  .left-right{
+    display: flex !important;
+    flex-direction: row !important;
+  }
+  .ad{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+  }
+  .hero{
+    background-position: 0px 0px;
+  }
+
+}
+@media only screen and (max-width: 800px){
+  .center-card{
+    margin: 0 auto;
+  }
+}
+@media(min-width: 1200px) and (max-width: 1400px){
+  .prod-center{
+    /* margin: 0 0 0 30em !important; */
+    padding-left: 6em !important;
+    /* background-color: red; */
+  }
+}

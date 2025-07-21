@@ -1,0 +1,67 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #333;
+    color: #fff;
+}
+
+.logo {
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+.logo1 {
+    width: 2.5em; 
+    height: auto;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu-item {
+    transition: background-color 0.3s ease;
+    color: #ffffff;
+    text-decoration: none;
+}
+  
+
+.menu-item:hover {
+    background-color: #4c4848ba; /* Change this to the color you want */
+}
+
+
+.user-profile {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.user-profile img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+.main-content {
+    margin-left: 265px;
+    margin-right: 15px; /* Ensure main content starts after the sidebar */
+    /* Add additional styling as needed */
+}
